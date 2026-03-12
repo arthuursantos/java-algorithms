@@ -14,13 +14,4 @@ public class _01_call_stack {
     // recursive function runs forever?
     // ...  a função recursiva é encerrada com um erro de out of memory
 
-    public static int recursiveSum(int[] arr, int i) {
-        if (i == arr.length) return 0;
-        return arr[i] + recursiveSum(arr, i + 1);
-    }
-
-    public static void main(String[] args) {
-        System.out.println(recursiveSum(new int[]{1, 3, 0, 100, 23}, 0));
-    }
-
 }

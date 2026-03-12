@@ -8,9 +8,9 @@ public class _01_binary_search {
         while (low <= high) {
             int mid = (low+high) / 2;
             if (arr[mid] < n) {
-                low = arr[mid] + 1;
+                low = mid + 1;
             } else if (arr[mid] > n) {
-                high = arr[mid] - 1;
+                high = mid - 1;
             } else {
                 return mid;
             }
@@ -20,7 +20,7 @@ public class _01_binary_search {
 
     public static void main(String[] args) {
         int[] arr = {0, 3, 10, 28, 29, 87, 92};
-        System.out.println(binarySearch(arr, 28));
+        System.out.println(binarySearch(arr, 3));
     }
 
 }
